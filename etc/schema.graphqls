@@ -1,0 +1,8 @@
+type Query {
+    getCookiebot: Cookiebot @resolver(class:"\\ScandiPWA\\CookieBot\\Model\\Resolver\\GetCookiebot")
+}
+
+type Cookiebot {
+    enabled: Boolean
+    group_id: String
+}
